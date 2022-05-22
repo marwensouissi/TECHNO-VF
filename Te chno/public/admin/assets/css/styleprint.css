@@ -1,0 +1,51 @@
+
+body {
+  text-align:left;
+  width:180mm;
+  padding: 12mm ;
+  padding-bottom: 0 !important;
+  font-size: 13px;
+  -webkit-print-color-adjust: exact !important;
+}
+.page-header, .page-header-space {
+/* height: 265px; */
+min-height: 65mm;
+}
+
+.page-header .logo img {max-width: 100px;}
+.page-header {
+position: fixed;
+top: 0mm;
+width:180mm;
+padding-top: 5mm;
+}
+.page {page-break-after: always;width: 180mm;}
+.titre {line-height: 60px; font-size: 26px;font-weight: bold}
+.logo {text-align: right;margin-bottom:8px;}
+hr {
+border-top: solid 3px #294709 !important; margin-bottom: 8px
+}
+h4 {
+  font-size: 12px !important;
+  margin-bottom: 8px !important;
+  line-height: 1 !important;
+}
+.font-20 {font-size: 16px}
+.zone-text {min-height: 120px; background-color: #ccc;margin-bottom: 15px}
+.headernote {text-align: center;height: 25px;background-color: #4b4b4b ;width: 100%;color: #fff;margin-top: 10px}
+.boxcr {width: 350px;height:100px ;background-color: #ccc;float: right;font-size: 10px;padding: 8px}
+.headerbg {background-color: #ccc;margin-top:8px;padding: 0 !important}
+.lastfooter {background-color: darkolivegreen;text-align: center;color: #fff;font-size: 11px;padding: 10px;margin-top: 8px}
+.mydata{min-height:290mm}
+@page {
+margin: 0;
+padding : 15mm;
+}
+
+@media print {
+  /* thead {display: table-header-group;}  */
+  .mydata{min-height:290mm}
+ button {display: none;}
+ body {padding-bottom: 2mm}
+ 
+}
